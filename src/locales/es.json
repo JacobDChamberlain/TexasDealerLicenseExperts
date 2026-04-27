@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "faq": "Preguntas Frecuentes",
+    "successStories": "Casos de Éxito",
+    "getStarted": "Comenzar"
+  },
+  "landing": {
+    "title": "Los únicos Expertos en Licencias de Distribuidor en TX",
+    "heroImage": "Carro sobre papeleo",
+    "point1": "La única empresa que ofrece reuniones presenciales cara a cara",
+    "point2": "10 años y más de 100 Licencias GDN aprobadas",
+    "haveQuestions": "¿Tiene preguntas?",
+    "bookNow": "Reservar Ahora"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "q1": "¿Cómo nos ayudan?",
+    "a1": "Ayudamos con todo el proceso GDN y somos la única empresa local que lo hace en persona.",
+    "cta": "¿Nuevo distribuidor o tiene problemas con el DMV?"
+  },
+  "successStories": {
+    "title": "Casos de Éxito",
+    "cta": "¿Quiere comenzar y obtener su licencia rápidamente?"
+  },
+  "cta": {
+    "webinarTitle": "Seminario Web en Vivo Gratuito",
+    "webinarDesc": "con sección de preguntas y respuestas al final (15 min)",
+    "webinarNext": "Próxima disponible:",
+    "consultTitle": "Consulta presencial de 2 horas",
+    "consultUsual": "Generalmente $350,",
+    "consultNow": "Ahora solo $275 hasta el 15 de julio"
+  },
+  "contact": {
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "dealerQuestion": "¿Es usted un nuevo distribuidor potencial o ya es distribuidor de autos usados en Texas?",
+    "newDealer": "Nuevo distribuidor potencial",
+    "establishedDealer": "Ya soy distribuidor de autos usados en Texas",
+    "currentStep": "¿Paso actual en el proceso?",
+    "areas": "¿En qué áreas quiere ser distribuidor?",
+    "dmvConcern": "¿Cuál es su principal preocupación con el DMV?",
+    "submit": "Enviar",
+    "submitting": "Enviando..."
+  },
+  "book": {
+    "title": "Complete su Reserva",
+    "subtitle": "Consulta Presencial de 2 Horas — $275",
+    "processing": "Procesando..."
+  },
+  "thankYou": {
+    "title": "¡Gracias!",
+    "consultMsg": "¡Su consulta está reservada! Nos comunicaremos pronto para confirmar los detalles.",
+    "webinarMsg": "¡Está registrado para el seminario web! Revise su correo electrónico para los detalles.",
+    "returnHome": "Volver al Inicio"
+  },
+  "common": {
+    "bookNow": "Reservar Ahora",
+    "loading": "Cargando..."
+  }
+}

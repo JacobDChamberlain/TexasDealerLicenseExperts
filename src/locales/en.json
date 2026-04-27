@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "faq": "FAQ",
+    "successStories": "Success Stories",
+    "getStarted": "Get Started"
+  },
+  "landing": {
+    "title": "The only TX Dealer License Experts",
+    "heroImage": "Car on paperwork",
+    "point1": "The only company to offer in person face to face meetings",
+    "point2": "10 Years and more than 100 Approved GDN Licenses",
+    "haveQuestions": "Have Questions?",
+    "bookNow": "Book Now"
+  },
+  "faq": {
+    "title": "FAQ",
+    "q1": "How do you guys help?",
+    "a1": "We help with the entire GDN process and are the only in person local company to do it.",
+    "cta": "New Dealer or having issues with the DMV?"
+  },
+  "successStories": {
+    "title": "Success Stories",
+    "cta": "Want to start and get your license quickly?"
+  },
+  "cta": {
+    "webinarTitle": "Free Live Webinar",
+    "webinarDesc": "with small Q&A Section at end (15 mins)",
+    "webinarNext": "Next Available:",
+    "consultTitle": "In-Person 2 hour consultation",
+    "consultUsual": "Usually $350,",
+    "consultNow": "Now only $275 until July 15th"
+  },
+  "contact": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone #",
+    "dealerQuestion": "Are you a new prospective dealer or already a used car dealer in Texas?",
+    "newDealer": "New prospective dealer",
+    "establishedDealer": "Already a used car dealer in Texas",
+    "currentStep": "Current Step in Process?",
+    "areas": "What areas are you trying to be a dealer in?",
+    "dmvConcern": "What is your main concern with the DMV?",
+    "submit": "Submit",
+    "submitting": "Submitting..."
+  },
+  "book": {
+    "title": "Complete Your Booking",
+    "subtitle": "In-Person 2-Hour Consultation — $275",
+    "processing": "Processing..."
+  },
+  "thankYou": {
+    "title": "Thank You!",
+    "consultMsg": "Your consultation is booked! We'll be in touch shortly to confirm details.",
+    "webinarMsg": "You're registered for the webinar! Check your email for confirmation details.",
+    "returnHome": "Return Home"
+  },
+  "common": {
+    "bookNow": "Book Now",
+    "loading": "Loading..."
+  }
+}

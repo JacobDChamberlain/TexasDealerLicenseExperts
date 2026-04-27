@@ -1,0 +1,45 @@
+export const handler = async (event) => {
+  if (event.httpMethod !== 'POST') {
+    return { statusCode: 405, body: 'Method Not Allowed' };
+  }
+
+  const { Resend } = await import('resend');
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
+  let data;
+  try {
+    data = JSON.parse(event.body);
+  } catch {
+    return { statusCode: 400, body: 'Invalid JSON' };
+  }
+
+  const { name, email, phone, dealerType, currentStep, areas, dmvConcern } = data;
+
+  const dealerSection = dealerType === 'new'
+    ? `Dealer Type: New Prospective Dealer\nCurrent Step: ${currentStep}\nAreas: ${areas}`
+    : `Dealer Type: Established Dealer\nMain DMV Concern: ${dmvConcern}`;
+
+  try {
+    await Promise.all([
+      // Email to owner
+      resend.emails.send({
+        from: process.env.FROM_EMAIL,
+        to: process.env.OWNER_EMAIL,
+        subject: `[WEBINAR SIGNUP] ${name} — ${email}`,
+        text: `New webinar signup:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\n${dealerSection}`,
+      }),
+      // Confirmation to customer
+      resend.emails.send({
+        from: process.env.FROM_EMAIL,
+        to: email,
+        subject: 'You\'re registered for the TX Dealer License Experts Webinar!',
+        text: `Hi ${name},\n\nYou're registered for our free live webinar. We'll send details closer to the date.\n\nThank you!\nTX Dealer License Experts`,
+      }),
+    ]);
+
+    return { statusCode: 200, body: JSON.stringify({ ok: true }) };
+  } catch (err) {
+    console.error('Resend error:', err);
+    return { statusCode: 500, body: 'Email send failed' };
+  }
+};
