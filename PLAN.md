@@ -67,18 +67,25 @@ Emails sent via **Resend API** called from Netlify serverless functions:
 
 ## Build Steps
 
-- [ ] **Step 1 — Project scaffold** — `npm create vite`, install Tailwind, React Router, set up folder structure and base layout
-- [ ] **Step 2 — Routing & shell** — All 7 routes wired up with placeholder pages, shared nav/footer
-- [ ] **Step 3 — Static pages** — Build Landing, FAQ, Success Stories (content + layout, asset placeholders)
-- [ ] **Step 4 — CTA & Contact Form** — Two-path CTA card, contact form with path-aware state passing
-- [ ] **Step 5 — Stripe integration** — Payment Element on `/book`, test mode first
-- [ ] **Step 6 — Serverless functions** — Resend email functions + Stripe webhook, tested locally with Netlify CLI
-- [ ] **Step 7 — Thank You page** — Path-aware messaging (webinar vs. consultation)
+- [x] **Step 1 — Project scaffold** — `npm create vite`, install Tailwind, React Router, set up folder structure and base layout
+- [x] **Step 2 — Routing & shell** — All 8 routes wired up (added About), shared nav/footer, secondary nav, floating Book Now button
+- [x] **Step 3 — Static pages** — Landing, FAQ, Success Stories, About built; EN/ES bilingual via react-i18next; scroll animations via AnimateIn; yellow accent + Montserrat/Courgette fonts
+- [x] **Step 4 — CTA & Contact Form** — Two-path CTA card with tap animation, contact form with conditional fields, path-aware state passing
+- [ ] **Step 5 — Stripe integration** — Payment Element on `/book`, test mode first (client needs to create Stripe account and provide keys)
+- [ ] **Step 6 — Serverless functions** — Wire Resend email functions + Stripe webhook; install stripe + resend npm packages; test locally with Netlify CLI + Stripe CLI
+- [x] **Step 7 — Thank You page** — Path-aware messaging (webinar vs. consultation)
 - [ ] **Step 8 — Polish & mobile QA** — Tailwind responsive pass, cross-browser check, accessibility basics
-- [ ] **Step 9 — Deploy** — Netlify deploy, env vars set (Stripe keys, Resend API key), end-to-end test in prod
+- [x] **Step 9 — Deploy** — Live at https://glittering-hamster-5fd5c4.netlify.app
 
 ---
 
 ## Current Step
 
-**Step 1 — Project scaffold**
+**Step 5 — Stripe integration** (blocked until client provides Stripe publishable + secret keys)
+
+## Pending / Deferred
+
+- Client to provide real About page content
+- Client to provide logo / photo assets (placeholders in place)
+- Additional FAQ items from client
+- Custom domain + domain email (FROM_EMAIL) via Resend once domain is chosen
