@@ -1,26 +1,70 @@
 {
   "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "gdn": "¿Qué es un GDN?",
     "faq": "Preguntas Frecuentes",
     "successStories": "Casos de Éxito",
     "getStarted": "Comenzar"
   },
+  "about": {
+    "title": "Nosotros",
+    "p1": "[ Nombre del propietario y antecedentes — el cliente debe completar ]",
+    "p2": "Con más de 10 años de experiencia y cientos de licencias GDN aprobadas exitosamente, sabemos exactamente lo que el DMV de Texas busca — y cómo hacerlo bien desde la primera vez.",
+    "p3": "[ Historia personal, misión u otra información que el cliente desee compartir ]"
+  },
+  "gdn": {
+    "title": "¿Qué es una Licencia GDN?",
+    "intro": "Una licencia GDN (Número Distintivo General) es la licencia emitida por el Departamento de Vehículos Motorizados de Texas que le permite comprar y vender vehículos usados legalmente como distribuidor en Texas. Sin ella, no puede operar legalmente un concesionario. [ Texto introductorio adicional a proporcionar por el cliente ]",
+    "stepsTitle": "Pasos Generales para Obtener la Licencia",
+    "steps": [
+      { "heading": "Paso 1 — [ Marcador de posición ]", "body": "[ El cliente debe proporcionar los detalles ]" },
+      { "heading": "Paso 2 — [ Marcador de posición ]", "body": "[ El cliente debe proporcionar los detalles ]" },
+      { "heading": "Paso 3 — [ Marcador de posición ]", "body": "[ El cliente debe proporcionar los detalles ]" },
+      { "heading": "Paso 4 — [ Marcador de posición ]", "body": "[ El cliente debe proporcionar los detalles ]" }
+    ],
+    "whyTitle": "¿Por qué trabajar con Dealer License Pros?",
+    "whyBody": "Navegar el proceso GDN solo requiere mucho tiempo y es fácil cometer errores. Una sola deficiencia puede retrasarlo meses. Hemos guiado a cientos de distribuidores a través del proceso sin ningún retraso innecesario — y somos la única empresa en Texas que lo hace en persona."
+  },
   "landing": {
-    "title": "Los únicos Expertos en Licencias de Distribuidor en TX",
-    "heroImage": "Carro sobre papeleo",
-    "point1": "La única empresa que ofrece reuniones presenciales cara a cara",
-    "point2": "10 años y más de 100 Licencias GDN aprobadas",
-    "haveQuestions": "¿Tiene preguntas?",
-    "bookNow": "Reservar Ahora"
+    "headline": "Deje de buscar en Google. Comience su concesionaria de la manera correcta.",
+    "subheadline": "Siéntese con un profesional local de licencias de distribuidor.",
+    "body1": "No solo le damos información—lo guiamos en cada paso para obtener su licencia de distribuidor, para que pueda lanzar más rápido y evitar errores costosos.",
+    "body2": "Ya sea que necesite una licencia de distribuidor estándar o una licencia especial, lo tenemos cubierto.",
+    "body3": "Con más de 10 años de experiencia y cientos de aprobaciones exitosas, sabemos cómo navegar el sistema eficientemente—y obtener resultados.",
+    "body4": "¿Ya tiene una licencia pero tiene problemas o deficiencias? También podemos ayudar a solucionar eso.",
+    "tagline": "Sin suposiciones. Sin demoras. Solo resultados.",
+    "haveQuestions": "¿Tiene preguntas?"
   },
   "faq": {
     "title": "Preguntas Frecuentes",
     "q1": "¿Cómo nos ayudan?",
     "a1": "Ayudamos con todo el proceso GDN y somos la única empresa local que lo hace en persona.",
+    "q2": "¿Qué debo hacer si me encuentro con un Bigfoot?",
+    "a2": "Mantenga la calma. Los más grandes entre nosotros siempre han comprendido que la compostura ante lo desconocido es la señal de una mente preparada. No lo persiga. No lo provoque. Simplemente reconozca el encuentro, tome nota de su entorno y continúe con su día. El bosque tiene sus asuntos. Usted tiene los suyos.",
     "cta": "¿Nuevo distribuidor o tiene problemas con el DMV?"
   },
   "successStories": {
     "title": "Casos de Éxito",
-    "cta": "¿Quiere comenzar y obtener su licencia rápidamente?"
+    "cta": "¿Quiere comenzar y obtener su licencia rápidamente?",
+    "obtained": "Licencia obtenida",
+    "booked": "Reservó",
+    "stories": [
+      {
+        "name": "Rasheed N.",
+        "booked": "7/15/2025",
+        "obtained": "1/22/2026",
+        "licenseType": "Licencia GDN estándar en Texas",
+        "quote": "Los Dealer License Pros realmente me facilitaron mucho obtener mi licencia de distribuidor. Mi primo, que también está en el negocio, obtuvo su licencia después de muchas deficiencias. Le tomó casi 11 meses. Estos señores lograron obtener mi licencia sin una sola deficiencia y en solo 6 meses."
+      },
+      {
+        "name": "Alejandro R.",
+        "booked": "3/22/2025",
+        "obtained": "10/02/2025",
+        "licenseType": "Licencia GDN estándar en Texas",
+        "quote": "¡Qué puedo decir! Estos señores saben de lo que hablan. Rápidos para responder y siempre disponibles. No tuve que lidiar con ninguno de los correos de los agentes, ellos se encargaron de todo."
+      }
+    ]
   },
   "cta": {
     "webinarTitle": "Seminario Web en Vivo Gratuito",

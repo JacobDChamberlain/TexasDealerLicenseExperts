@@ -41,17 +41,11 @@ export default function Contact() {
     }
   };
 
-  const inputClass = 'w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500';
+  const inputClass = 'w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-accent';
   const labelClass = 'block text-sm font-semibold text-gray-700 mb-1';
 
   return (
-    <main className="flex-1">
-      <div className="flex justify-center py-6">
-        <div className="bg-red-600 text-white font-black text-xl px-12 py-4 rounded-full shadow-lg">
-          {t('common.bookNow').toUpperCase()}
-        </div>
-      </div>
-
+    <div className="mx-4 my-6">
       <section className="mx-4 mb-8">
         <div className="max-w-lg mx-auto border-2 border-gray-900 rounded-2xl p-6 bg-white">
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -84,7 +78,7 @@ export default function Contact() {
                       checked={form.dealerType === value}
                       onChange={set('dealerType')}
                       required
-                      className="accent-red-600 w-4 h-4"
+                      className="accent-accent w-4 h-4"
                     />
                     <span className="text-gray-800">{label}</span>
                   </label>
@@ -119,13 +113,13 @@ export default function Contact() {
             <button
               type="submit"
               disabled={submitting}
-              className="w-full bg-red-600 hover:bg-red-700 disabled:opacity-60 text-white font-black text-lg py-4 rounded-full transition-colors"
+              className="w-full bg-accent hover:brightness-95 disabled:opacity-60 text-gray-900 font-black text-lg py-4 rounded-full transition-colors"
             >
               {submitting ? t('contact.submitting') : t('contact.submit')}
             </button>
           </form>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

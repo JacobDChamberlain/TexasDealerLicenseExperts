@@ -1,38 +1,44 @@
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import AnimateIn from '../components/ui/AnimateIn';
 
 export default function SuccessStories() {
   const { t } = useTranslation();
+  const stories = t('successStories.stories', { returnObjects: true });
 
   return (
-    <main className="flex-1">
-      <section className="border-4 border-red-600 mx-4 my-6 rounded-sm">
-        <div className="p-8">
-          <h1 className="text-3xl sm:text-4xl font-black text-gray-900 text-center mb-2">
+    <div className="border-4 border-accent mx-4 my-6 rounded-sm">
+      <div className="p-6 sm:p-10">
+        <AnimateIn direction="fade">
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-2">
             {t('successStories.title')}
           </h1>
-          <div className="w-24 h-1 bg-gray-900 mx-auto mb-8" />
+          <div className="w-24 h-1 bg-gray-900 mx-auto mb-10" />
+        </AnimateIn>
 
-          {/* Content placeholder — client will provide testimonials/stories */}
-          <div className="min-h-64 flex items-center justify-center text-gray-400 text-sm border border-dashed border-gray-200 rounded-lg">
-            [ Success stories content — to be provided by client ]
-          </div>
+        <div className="max-w-2xl mx-auto space-y-8">
+          {stories.map(({ name, booked, obtained, licenseType, quote }, i) => (
+            <AnimateIn key={name} direction={i % 2 === 0 ? 'left' : 'right'} delay={i * 100}>
+              <div className="border border-gray-200 rounded-xl p-6 shadow-sm">
+                <p className="font-extrabold text-gray-900 text-lg mb-1">{name}</p>
+                <p className="text-sm text-gray-500 mb-1">{t('successStories.booked')}: {booked}</p>
+                <p className="text-sm text-green-700 font-semibold mb-4">
+                  ✅ {t('successStories.obtained')} {licenseType} — {obtained}
+                </p>
+                <blockquote className="text-gray-700 leading-relaxed border-l-4 border-accent pl-4 font-cursive text-lg">
+                  "{quote}"
+                </blockquote>
+              </div>
+            </AnimateIn>
+          ))}
+        </div>
 
+        <AnimateIn direction="fade" delay={200}>
           <div className="mt-12 text-center">
             <p className="font-bold text-gray-900 mb-2">{t('successStories.cta')}</p>
-            <div className="text-red-600 text-4xl">⬇</div>
+            <div className="text-accent text-4xl">⬇</div>
           </div>
-        </div>
-      </section>
-
-      <div className="flex justify-center pb-8">
-        <Link
-          to="/get-started"
-          className="bg-red-600 hover:bg-red-700 text-white font-black text-xl px-12 py-4 rounded-full transition-colors shadow-lg"
-        >
-          {t('common.bookNow').toUpperCase()}
-        </Link>
+        </AnimateIn>
       </div>
-    </main>
+    </div>
   );
 }

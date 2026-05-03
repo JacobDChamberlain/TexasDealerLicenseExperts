@@ -2,8 +2,15 @@
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        accent: '#F8B21D',
+      },
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+        cursive: ['Courgette', 'cursive'],
+      },
+    },
   },
   plugins: [],
 }
-

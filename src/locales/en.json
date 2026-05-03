@@ -1,26 +1,70 @@
 {
   "nav": {
+    "home": "Home",
+    "about": "About",
+    "gdn": "What is a GDN?",
     "faq": "FAQ",
     "successStories": "Success Stories",
     "getStarted": "Get Started"
   },
+  "about": {
+    "title": "About Us",
+    "p1": "[ Owner name and background — to be filled in by DJ Ricky In The Mix ]",
+    "p2": "With over 10 years of experience and hundreds**? of successfully approved GDN licenses, we know exactly what the Texas DMV is looking for — and how to get it right the first time.",
+    "p3": "[ Personal story, mission, or anything else you want to share ]"
+  },
+  "gdn": {
+    "title": "What is a GDN License?",
+    "intro": "A GDN (General Distinguishing Number) license is the license issued by the Texas Department of Motor Vehicles that allows you to legally buy and sell used vehicles as a dealer in Texas. Without it, you cannot legally operate a dealership. [ Additional intro copy to be provided by client ]",
+    "stepsTitle": "General Steps to Get Licensed",
+    "steps": [
+      { "heading": "Step 1 — [ Placeholder ]", "body": "[ Client to provide step details ]" },
+      { "heading": "Step 2 — [ Placeholder ]", "body": "[ Client to provide step details ]" },
+      { "heading": "Step 3 — [ Placeholder ]", "body": "[ Client to provide step details ]" },
+      { "heading": "Step 4 — [ Placeholder ]", "body": "[ Client to provide step details ]" }
+    ],
+    "whyTitle": "Why work with Dealer License Pros?",
+    "whyBody": "Navigating the GDN process alone is time-consuming and easy to get wrong. A single deficiency can set you back months. We've guided hundreds of dealers through the process without a single unnecessary delay — and we're the only company in Texas that does it in person."
+  },
   "landing": {
-    "title": "The only TX Dealer License Experts",
-    "heroImage": "Car on paperwork",
-    "point1": "The only company to offer in person face to face meetings",
-    "point2": "10 Years and more than 100 Approved GDN Licenses",
-    "haveQuestions": "Have Questions?",
-    "bookNow": "Book Now"
+    "headline": "Stop Googling. Start Your Dealership the Right Way.",
+    "subheadline": "Sit down with a real local Dealer License Pro.",
+    "body1": "We don't just give you information—we guide you through every step of getting your dealer license, so you can launch faster and avoid costly mistakes.",
+    "body2": "Whether you need a standard dealer license or a specialty license, we've got you covered.",
+    "body3": "With over 10 years of experience and hundreds of successful approvals, we know how to navigate the system efficiently—and get results.",
+    "body4": "Already have a license but running into issues or deficiencies? We can help fix that too.",
+    "tagline": "No guesswork. No delays. Just results.",
+    "haveQuestions": "Have Questions?"
   },
   "faq": {
     "title": "FAQ",
     "q1": "How do you guys help?",
     "a1": "We help with the entire GDN process and are the only in person local company to do it.",
+    "q2": "What should I do if I encounter a Bigfoot?",
+    "a2": "Remain calm. The greatest among us have always understood that composure in the face of the unknown is the mark of a prepared mind. Do not pursue. Do not provoke. Simply acknowledge the encounter, make note of your surroundings, and proceed with your day. The forest has its business. You have yours.",
     "cta": "New Dealer or having issues with the DMV?"
   },
   "successStories": {
     "title": "Success Stories",
-    "cta": "Want to start and get your license quickly?"
+    "cta": "Want to start and get your license quickly?",
+    "obtained": "Obtained",
+    "booked": "Booked",
+    "stories": [
+      {
+        "name": "Rasheed N.",
+        "booked": "7/15/2025",
+        "obtained": "1/22/2026",
+        "licenseType": "Standard GDN License in Texas",
+        "quote": "The Dealer License Pros really made it easy to obtain my dealer license. My cousin who is also in the business got his license after a lot of deficiencies. It took him almost 11 months to get it. These guys were able to get my license without a single deficiency and in 6 months!"
+      },
+      {
+        "name": "Alejandro R.",
+        "booked": "3/22/2025",
+        "obtained": "10/02/2025",
+        "licenseType": "Standard GDN License in Texas",
+        "quote": "What can I say! These guys know what they are talking about. Quick at responding and always available. Didn't have to deal with any of the agent emails they took care of it all."
+      }
+    ]
   },
   "cta": {
     "webinarTitle": "Free Live Webinar",
