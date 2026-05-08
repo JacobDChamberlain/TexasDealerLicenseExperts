@@ -25,12 +25,15 @@ export default function SplashScreen({ onDone }) {
       }}
       className="fixed inset-0 z-[100] bg-accent flex items-center justify-center"
     >
-      <span
-        style={textStyle}
-        className="text-gray-900 font-black text-2xl tracking-wide"
-      >
-        Dealer License Pros
-      </span>
+      <div className="flex flex-col items-center gap-2">
+        <span
+          style={textStyle}
+          className="text-gray-900 font-black text-2xl tracking-wide"
+        >
+          Dealer License Pros
+        </span>
+        <span style={textStyle} className="text-4xl">🚗</span>
+      </div>
     </div>
   );
 }
