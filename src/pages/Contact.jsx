@@ -15,15 +15,16 @@ export default function Contact() {
   });
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
+  const [showTerms, setShowTerms] = useState(false);
 
   const set = (field) => (e) => setForm((f) => ({ ...f, [field]: e.target.value }));
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitting(true);
     setError('');
 
     if (path === 'webinar') {
+      setSubmitting(true);
       try {
         const res = await fetch(WEBINAR_EMAIL_URL, {
           method: 'POST',
@@ -37,8 +38,13 @@ export default function Contact() {
         setSubmitting(false);
       }
     } else {
-      navigate('/book', { state: { contact: form } });
+      setShowTerms(true);
     }
+  };
+
+  const handleAgree = () => {
+    setShowTerms(false);
+    navigate('/book', { state: { contact: form } });
   };
 
   const inputClass = 'w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-accent';
@@ -120,6 +126,35 @@ export default function Contact() {
           </form>
         </div>
       </section>
+      {/* Terms & Conditions modal — consult path only */}
+      {showTerms && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
+          <div className="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl flex flex-col max-h-[80vh]">
+            <h2 className="text-xl font-black text-gray-900 mb-4">Terms &amp; Conditions</h2>
+            <div className="overflow-y-auto text-sm text-gray-700 space-y-3 flex-1 pr-1">
+              <p><strong>[ Placeholder — client to provide full terms ]</strong></p>
+              <p>By clicking "I Agree," you acknowledge that you have read, understood, and agree to the terms and conditions governing the in-person consultation service provided by Dealer License Pros.</p>
+              <p>The consultation fee of $275 is non-refundable once the appointment has been confirmed. Dealer License Pros does not guarantee approval of any license application, as final decisions rest with the Texas Department of Motor Vehicles.</p>
+              <p>All information shared during the consultation is confidential and will not be disclosed to third parties without your consent.</p>
+              <p>[ Additional terms to be provided by client ]</p>
+            </div>
+            <div className="flex gap-3 mt-6">
+              <button
+                onClick={() => setShowTerms(false)}
+                className="flex-1 border-2 border-gray-300 text-gray-700 font-bold py-3 rounded-full hover:border-gray-500 transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleAgree}
+                className="flex-1 bg-accent text-gray-900 font-black py-3 rounded-full hover:brightness-95 transition-colors"
+              >
+                I Agree
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

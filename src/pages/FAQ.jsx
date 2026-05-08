@@ -10,7 +10,7 @@ export default function FAQ() {
   ];
 
   return (
-    <div className="border-4 border-accent mx-4 my-6 rounded-sm">
+    <div className="border-8 border-accent mx-4 my-6 rounded-sm">
       <div className="p-6 sm:p-10">
         <h1 className="text-3xl sm:text-4xl font-black text-gray-900 text-center mb-2">
           {t('faq.title')}

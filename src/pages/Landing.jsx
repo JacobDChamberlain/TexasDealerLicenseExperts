@@ -5,7 +5,7 @@ export default function Landing() {
   const { t } = useTranslation();
 
   return (
-    <div className="border-4 border-accent mx-4 my-6 rounded-sm">
+    <div className="border-8 border-accent mx-4 my-6 rounded-sm">
       <div className="p-6 sm:p-10 max-w-2xl mx-auto text-center">
 
         <AnimateIn direction="fade">

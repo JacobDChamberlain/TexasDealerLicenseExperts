@@ -6,7 +6,7 @@ export default function SuccessStories() {
   const stories = t('successStories.stories', { returnObjects: true });
 
   return (
-    <div className="border-4 border-accent mx-4 my-6 rounded-sm">
+    <div className="border-8 border-accent mx-4 my-6 rounded-sm">
       <div className="p-6 sm:p-10">
         <AnimateIn direction="fade">
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-2">
