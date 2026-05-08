@@ -54,7 +54,7 @@ function AppShell() {
       </main>
 
       {!hideBookNow && (
-        <div ref={anchorRef} className="relative flex justify-center py-10 -mt-7">
+        <div ref={anchorRef} className="relative flex justify-center py-[45px] -mt-7">
           {/* always in-flow to reserve space; invisible until docked */}
           <div ref={inFlowButtonRef} style={{ opacity: docked ? 1 : 0, pointerEvents: docked ? 'auto' : 'none' }}>
             <FloatingBookNow docked />

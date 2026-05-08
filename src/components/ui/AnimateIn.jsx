@@ -26,7 +26,7 @@ export default function AnimateIn({ children, direction = 'fade', delay = 0, cla
       ref={ref}
       className={className}
       style={{
-        transition: `opacity 0.7s ease-out, transform 0.7s ease-out`,
+        transition: `opacity 1s ease-out, transform 1s ease-out`,
         transitionDelay: `${delay}ms`,
         ...(show ? visible : hidden[direction]),
       }}

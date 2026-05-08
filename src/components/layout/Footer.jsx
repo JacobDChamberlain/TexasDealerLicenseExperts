@@ -4,8 +4,9 @@ import AnimateIn from '../ui/AnimateIn';
 
 export default function Footer() {
   const { t } = useTranslation();
+  // previously had pb-28 to clear the floating Book Now button
   return (
-    <footer className="bg-gray-900 text-gray-400 pb-28">
+    <footer className="bg-gray-900 text-gray-400">
       <AnimateIn direction="fade">
         <div className="max-w-5xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
           <Link to="/" className="font-bold text-white hover:text-gray-300 transition-colors">Dealer License Pros</Link>
