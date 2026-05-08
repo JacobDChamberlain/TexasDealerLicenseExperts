@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import SecondaryNav from './components/layout/SecondaryNav';
@@ -11,6 +12,7 @@ import CTA from './pages/CTA';
 import Contact from './pages/Contact';
 import Book from './pages/Book';
 import ThankYou from './pages/ThankYou';
+import SplashScreen from './components/ui/SplashScreen';
 
 function AppShell() {
   const { pathname } = useLocation();
@@ -42,8 +44,11 @@ function AppShell() {
 }
 
 export default function App() {
+  const [splashDone, setSplashDone] = useState(false);
+
   return (
     <BrowserRouter>
+      {!splashDone && <SplashScreen onDone={() => setSplashDone(true)} />}
       <AppShell />
     </BrowserRouter>
   );
