@@ -4,10 +4,10 @@ import AccordionItem from '../components/ui/AccordionItem';
 export default function FAQ() {
   const { t } = useTranslation();
 
-  const items = [
-    { question: t('faq.q1'), answer: t('faq.a1') },
-    { question: t('faq.q2'), answer: t('faq.a2') },
-  ];
+  const items = [1, 2, 3, 4, 5, 6].map((n) => ({
+    question: t(`faq.q${n}`),
+    answer: t(`faq.a${n}`),
+  }));
 
   return (
     <div className="border-8 border-accent mx-4 my-6 rounded-sm">

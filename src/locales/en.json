@@ -9,9 +9,9 @@
   },
   "about": {
     "title": "About Us",
-    "p1": "[ Owner name and background — to be filled in by DJ Ricky In The Mix ]",
-    "p2": "With over 10 years of experience and hundreds of successfully approved GDN licenses, we know exactly what the Texas DMV is looking for — and how to get it right the first time.",
-    "p3": "[ Personal story, mission, or anything else you want to share ]"
+    "p1": "Hi, I'm Ricky, founder of Dealer License Pros and your local license professional.\n\nFor over 10 years, I've helped aspiring dealership owners navigate the dealer licensing process with confidence. I started this business because I saw too many people wasting time, losing money, and getting stuck trying to figure everything out on their own.",
+    "p2": "Most people start by Googling answers, watching random videos, or relying on outdated advice. The problem is that dealer licensing isn't something you want to guess your way through. One small mistake can delay your approval, create compliance issues, or cost you thousands in lost time.\n\nThat's where I come in.\n\nI work directly with clients to guide them step-by-step through the dealer license process—from paperwork and business setup to inspections, corrections, and state requirements. Whether you're applying for a standard dealer license, wholesale license, motorcycle license, or another specialty license, I help simplify the process so you can launch faster and avoid costly setbacks.\n\nOver the years, I've helped hundreds of clients get approved successfully. I know what licensing agencies look for, how to avoid common deficiencies, and how to keep the process moving efficiently.\n\nAnd if you already have a license but are running into issues, renewals, compliance problems, or deficiencies, I can help with that too.",
+    "p3": "What makes my approach different is simple:\n\n• Real one-on-one guidance\n• Clear answers without the confusion\n• Fast, efficient support\n• Experience that saves you time and money\n• A commitment to helping you get approved the right way\n\nI believe starting a dealership should feel exciting—not overwhelming. My goal is to give you the support, clarity, and expertise you need to move forward with confidence.\n\nNo guesswork. No unnecessary delays. Just results.\n\nIf you're ready to start your dealership the right way, let's talk."
   },
   "gdn": {
     "title": "What is a GDN License?",
@@ -33,15 +33,37 @@
     "body2": "Whether you need a standard dealer license or a specialty license, we've got you covered.",
     "body3": "With over 10 years of experience and hundreds of successful approvals, we know how to navigate the system efficiently—and get results.",
     "body4": "Already have a license but running into issues or deficiencies? We can help fix that too.",
+    "checklist": [
+      "10+ Years Experience",
+      "Guidance for First-Time Dealers",
+      "DMV & State Requirement Knowledge",
+      "Dealer License Renewals & Transfers",
+      "Personalized One-on-One Support",
+      "Ongoing Compliance Assistance",
+      "Application Review & Corrections",
+      "Real Humans — No Call Centers",
+      "Help for Denied or Delayed Applications",
+      "Honest Answers & Real Guidance"
+    ],
     "tagline": "No guesswork. No delays. Just results.",
     "haveQuestions": "Have Questions?"
   },
   "faq": {
     "title": "FAQ",
-    "q1": "How do you guys help?",
-    "a1": "We help with the entire GDN process and are the only in person local company to do it.",
-    "q2": "What should I do if I encounter a Bigfoot?",
-    "a2": "Remain calm. The greatest among us have always understood that composure in the face of the unknown is the mark of a prepared mind. Do not pursue. Do not provoke. Simply acknowledge the encounter, make note of your surroundings, and proceed with your day. The forest has its business. You have yours.",
+    "q1": "How long does it take to get a dealer license?",
+    "a1": "The timeline depends on your state requirements and how quickly documents are completed, but most clients who follow our process are able to move through the licensing process much faster and with fewer delays.",
+    "q2": "Do I need experience to become a licensed dealer?",
+    "a2": "No. Many of our clients are first-time dealership owners. We guide you through the process step-by-step, even if you're starting from zero.",
+    "q3": "Can you help if my application was denied?",
+    "a3": "Yes. If your application was denied, delayed, or returned with deficiencies, we can review the issues and help you correct them properly.",
+    "q4": "Do you help with dealer renewals?",
+    "a4": "Yes. We assist with renewals, updates, compliance issues, and other dealer licensing problems after you're approved.",
+    "q5": "Do you only help local clients?",
+    "a5": "No. Depending on your state and licensing needs, we may be able to assist remotely as well.",
+    "q6": "How do I get started?",
+    "a6": "Simply press the \"Talk to a PRO\" button and book a consultation. We'll walk you through the next steps and help you move forward with confidence.",
+    "q7": "What should I do if I encounter a Bigfoot?",
+    "a7": "Remain calm. The greatest among us have always understood that composure in the face of the unknown is the mark of a prepared mind. Do not pursue. Do not provoke. Simply acknowledge the encounter, make note of your surroundings, and proceed with your day. The forest has its business. You have yours.",
     "cta": "New Dealer or having issues with the DMV?"
   },
   "successStories": {
@@ -99,7 +121,7 @@
     "returnHome": "Return Home"
   },
   "common": {
-    "bookNow": "Book Now",
+    "bookNow": "Talk to a PRO",
     "loading": "Loading..."
   }
 }

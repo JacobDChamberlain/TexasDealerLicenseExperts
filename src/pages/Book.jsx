@@ -15,7 +15,7 @@ export default function Book() {
 
         {/* Stripe Payment Element mounts here in Step 5 */}
         <div className="border border-dashed border-gray-300 rounded-lg p-8 text-gray-400 text-sm">
-          [ Stripe Payment Element — wired in Step 5 ]
+          [ Stripe Payment Element — TODO after Stripe account setup ]
         </div>
 
         {contact.name && (

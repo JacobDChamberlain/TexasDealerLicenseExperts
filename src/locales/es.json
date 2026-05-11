@@ -9,9 +9,9 @@
   },
   "about": {
     "title": "Nosotros",
-    "p1": "[ Nombre del propietario y antecedentes — el cliente debe completar ]",
-    "p2": "Con más de 10 años de experiencia y cientos de licencias GDN aprobadas exitosamente, sabemos exactamente lo que el DMV de Texas busca — y cómo hacerlo bien desde la primera vez.",
-    "p3": "[ Historia personal, misión u otra información que el cliente desee compartir ]"
+    "p1": "Hola, soy Ricky, fundador de Dealer License Pros y su profesional local de licencias.\n\nDurante más de 10 años, he ayudado a aspirantes a dueños de concesionarias a navegar el proceso de licencias con confianza. Comencé este negocio porque vi a demasiadas personas perdiendo tiempo, dinero y quedándose atascadas intentando resolverlo todo por su cuenta.",
+    "p2": "La mayoría comienza buscando en Google, viendo videos al azar o siguiendo consejos desactualizados. El problema es que las licencias de distribuidor no son algo que quiera adivinar. Un pequeño error puede retrasar su aprobación, crear problemas de cumplimiento o costarle miles en tiempo perdido.\n\nAhí es donde entro yo.\n\nTrabajo directamente con los clientes para guiarlos paso a paso a través del proceso de licencia de distribuidor, desde el papeleo y la configuración del negocio hasta las inspecciones, correcciones y requisitos estatales. Ya sea que solicite una licencia de distribuidor estándar, licencia mayorista, licencia de motocicletas u otra licencia especial, simplifico el proceso para que pueda iniciar más rápido y evitar contratiempos costosos.\n\nA lo largo de los años, he ayudado a cientos de clientes a obtener su aprobación con éxito. Sé lo que buscan las agencias de licencias, cómo evitar deficiencias comunes y cómo mantener el proceso avanzando de manera eficiente.\n\nY si ya tiene una licencia pero tiene problemas, renovaciones, problemas de cumplimiento o deficiencias, también puedo ayudar con eso.",
+    "p3": "Lo que hace diferente mi enfoque es simple:\n\n• Orientación real uno a uno\n• Respuestas claras sin confusión\n• Soporte rápido y eficiente\n• Experiencia que le ahorra tiempo y dinero\n• Compromiso de ayudarle a obtener la aprobación correctamente\n\nCreo que comenzar una concesionaria debería sentirse emocionante, no abrumador. Mi objetivo es darle el apoyo, la claridad y la experiencia que necesita para avanzar con confianza.\n\nSin suposiciones. Sin demoras innecesarias. Solo resultados.\n\nSi está listo para comenzar su concesionaria de la manera correcta, hablemos."
   },
   "gdn": {
     "title": "¿Qué es una Licencia GDN?",
@@ -33,15 +33,37 @@
     "body2": "Ya sea que necesite una licencia de distribuidor estándar o una licencia especial, lo tenemos cubierto.",
     "body3": "Con más de 10 años de experiencia y cientos de aprobaciones exitosas, sabemos cómo navegar el sistema eficientemente—y obtener resultados.",
     "body4": "¿Ya tiene una licencia pero tiene problemas o deficiencias? También podemos ayudar a solucionar eso.",
+    "checklist": [
+      "Más de 10 años de experiencia",
+      "Orientación para distribuidores principiantes",
+      "Conocimiento del DMV y requisitos estatales",
+      "Renovaciones y transferencias de licencias",
+      "Apoyo personalizado uno a uno",
+      "Asistencia continua de cumplimiento",
+      "Revisión y corrección de solicitudes",
+      "Personas reales — Sin centros de llamadas",
+      "Ayuda para solicitudes denegadas o retrasadas",
+      "Respuestas honestas y orientación real"
+    ],
     "tagline": "Sin suposiciones. Sin demoras. Solo resultados.",
     "haveQuestions": "¿Tiene preguntas?"
   },
   "faq": {
     "title": "Preguntas Frecuentes",
-    "q1": "¿Cómo nos ayudan?",
-    "a1": "Ayudamos con todo el proceso GDN y somos la única empresa local que lo hace en persona.",
-    "q2": "¿Qué debo hacer si me encuentro con un Bigfoot?",
-    "a2": "Mantenga la calma. Los más grandes entre nosotros siempre han comprendido que la compostura ante lo desconocido es la señal de una mente preparada. No lo persiga. No lo provoque. Simplemente reconozca el encuentro, tome nota de su entorno y continúe con su día. El bosque tiene sus asuntos. Usted tiene los suyos.",
+    "q1": "¿Cuánto tiempo tarda obtener una licencia de distribuidor?",
+    "a1": "El tiempo depende de los requisitos de su estado y qué tan rápido se completan los documentos, pero la mayoría de los clientes que siguen nuestro proceso pueden avanzar mucho más rápido y con menos retrasos.",
+    "q2": "¿Necesito experiencia para convertirme en distribuidor licenciado?",
+    "a2": "No. Muchos de nuestros clientes son dueños de concesionarias por primera vez. Los guiamos paso a paso, incluso si están comenzando desde cero.",
+    "q3": "¿Pueden ayudar si mi solicitud fue denegada?",
+    "a3": "Sí. Si su solicitud fue denegada, retrasada o devuelta con deficiencias, podemos revisar los problemas y ayudarle a corregirlos correctamente.",
+    "q4": "¿Ayudan con renovaciones de licencias?",
+    "a4": "Sí. Ayudamos con renovaciones, actualizaciones, problemas de cumplimiento y otros problemas de licencias después de ser aprobado.",
+    "q5": "¿Solo ayudan a clientes locales?",
+    "a5": "No. Dependiendo de su estado y necesidades de licencia, también podemos ayudar de forma remota.",
+    "q6": "¿Cómo empiezo?",
+    "a6": "Simplemente presione el botón \"Habla con un Experto\" y reserve una consulta. Le guiaremos a través de los próximos pasos y le ayudaremos a avanzar con confianza.",
+    "q7": "¿Qué debo hacer si me encuentro con un Bigfoot?",
+    "a7": "Mantenga la calma. Los más grandes entre nosotros siempre han comprendido que la compostura ante lo desconocido es la señal de una mente preparada. No lo persiga. No lo provoque. Simplemente reconozca el encuentro, tome nota de su entorno y continúe con su día. El bosque tiene sus asuntos. Usted tiene los suyos.",
     "cta": "¿Nuevo distribuidor o tiene problemas con el DMV?"
   },
   "successStories": {
@@ -99,7 +121,7 @@
     "returnHome": "Volver al Inicio"
   },
   "common": {
-    "bookNow": "Reservar Ahora",
+    "bookNow": "Habla con un Experto",
     "loading": "Cargando..."
   }
 }

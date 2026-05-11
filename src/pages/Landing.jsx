@@ -3,16 +3,11 @@ import AnimateIn from '../components/ui/AnimateIn';
 
 export default function Landing() {
   const { t } = useTranslation();
+  const checklist = t('landing.checklist', { returnObjects: true });
 
   return (
     <div className="border-8 border-accent mx-4 my-6 rounded-sm">
       <div className="p-6 sm:p-10 max-w-2xl mx-auto text-center">
-
-        <AnimateIn direction="fade">
-          <div className="w-full max-w-xs mx-auto mb-8 rounded-lg overflow-hidden bg-gray-100 h-48 flex items-center justify-center text-gray-400 text-sm">
-            [ Hero image — replace with client photo ]
-          </div>
-        </AnimateIn>
 
         <AnimateIn direction="fade" delay={100}>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-2">
@@ -24,13 +19,24 @@ export default function Landing() {
         </AnimateIn>
 
         <AnimateIn direction="left" delay={150}>
-          <div className="text-left space-y-4 mb-8">
+          <div className="text-left space-y-4 mb-6">
             {['body1', 'body2', 'body3', 'body4'].map((key) => (
               <p key={key} className="text-gray-800 leading-relaxed font-light">
                 {t(`landing.${key}`)}
               </p>
             ))}
           </div>
+        </AnimateIn>
+
+        <AnimateIn direction="left" delay={175}>
+          <ul className="inline-block text-left space-y-2 mb-8">
+            {checklist.map((item) => (
+              <li key={item} className="flex items-start gap-2 text-gray-800 font-light">
+                <span className="text-accent font-bold mt-0.5">✔</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </AnimateIn>
 
         <AnimateIn direction="right" delay={200}>
