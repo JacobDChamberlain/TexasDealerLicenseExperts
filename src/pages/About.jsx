@@ -13,9 +13,7 @@ export default function About() {
           </h1>
           <div className="w-24 h-1 bg-gray-900 mx-auto mb-10" />
 
-          <div className="w-36 h-36 rounded-full bg-gray-100 mx-auto mb-8 flex items-center justify-center text-gray-400 text-sm text-center">
-            [ Photo ]
-          </div>
+
         </AnimateIn>
 
         <AnimateIn direction="fade" delay={100}>
