@@ -13,7 +13,7 @@ export default function Landing() {
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-2">
             {t('landing.headline')}
           </h1>
-          <p className="text-xl font-light text-gray-700 mb-8">
+          <p className="text-xl font-light text-gray-900 mb-8">
             {t('landing.subheadline')}
           </p>
         </AnimateIn>
@@ -21,7 +21,7 @@ export default function Landing() {
         <AnimateIn direction="left" delay={150}>
           <div className="text-left space-y-4 mb-6">
             {['body1', 'body2', 'body3', 'body4'].map((key) => (
-              <p key={key} className="text-gray-800 leading-relaxed font-light">
+              <p key={key} className="text-gray-900 leading-relaxed">
                 {t(`landing.${key}`)}
               </p>
             ))}
@@ -31,8 +31,8 @@ export default function Landing() {
         <AnimateIn direction="left" delay={175}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2 text-left mb-8 inline-grid">
             {checklist.map((item) => (
-              <div key={item} className="flex items-start gap-2 text-gray-800 font-light">
-                <span className="text-accent font-bold mt-0.5">✔</span>
+              <div key={item} className="flex items-start gap-2 text-gray-900">
+                <span className="text-green-600 font-bold mt-0.5">✔</span>
                 <span>{item}</span>
               </div>
             ))}
