@@ -111,6 +111,7 @@
     "currentStep": "¿Paso actual en el proceso?",
     "areas": "¿En qué áreas quiere ser distribuidor?",
     "dmvConcern": "¿Cuál es su principal preocupación con el DMV?",
+    "additionalDetails": "Por favor agregue cualquier detalle que quiera que nuestro equipo sepa",
     "submit": "Enviar",
     "submitting": "Enviando..."
   },

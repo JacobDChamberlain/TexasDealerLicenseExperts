@@ -11,7 +11,7 @@ export default function Contact() {
   const path = state?.path ?? 'consult';
 
   const [form, setForm] = useState({
-    name: '', email: '', phone: '', dealerType: '', currentStep: '', areas: '', dmvConcern: '',
+    name: '', email: '', phone: '', dealerType: '', currentStep: '', areas: '', dmvConcern: '', additionalDetails: '',
   });
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
@@ -113,6 +113,11 @@ export default function Contact() {
                 <textarea required rows={3} className={inputClass} value={form.dmvConcern} onChange={set('dmvConcern')} />
               </div>
             )}
+
+            <div>
+              <label className={labelClass}>{t('contact.additionalDetails')}</label>
+              <textarea rows={3} className={inputClass} value={form.additionalDetails} onChange={set('additionalDetails')} />
+            </div>
 
             {error && <p className="text-red-600 text-sm">{error}</p>}
 

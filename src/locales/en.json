@@ -111,6 +111,7 @@
     "currentStep": "Current Step in Process?",
     "areas": "What areas are you trying to be a dealer in?",
     "dmvConcern": "What is your main concern with the DMV?",
+    "additionalDetails": "Please add any details you want our team to know",
     "submit": "Submit",
     "submitting": "Submitting..."
   },
