@@ -32,7 +32,7 @@ export default function SplashScreen({ onDone }) {
         >
           Dealer License Pros
         </span>
-        <span style={textStyle} className="text-4xl">🚗</span>
+        <img src="/assets/Car.png" alt="" style={{ ...textStyle, width: '3.5rem', height: '3.5rem', objectFit: 'contain' }} />
       </div>
     </div>
   );

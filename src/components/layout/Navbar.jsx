@@ -10,8 +10,7 @@ export default function Navbar() {
     <header className="bg-white border-b border-gray-300 fixed top-0 left-0 right-0 z-50">
       <div className="max-w-5xl mx-auto px-4 flex items-center justify-between h-14">
         <Link to="/" className="flex items-center gap-3">
-          {/* Swap for real logo asset when provided */}
-          <div className="text-accent text-2xl leading-none">🚗</div>
+          <img src="/assets/Car.png" alt="" className="h-14 w-14 object-contain" />
           <span className="font-black text-gray-900 text-base sm:text-lg leading-tight tracking-tight">
             Dealer License Pros
           </span>
