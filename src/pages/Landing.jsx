@@ -13,7 +13,7 @@ export default function Landing() {
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-2">
             {t('landing.headline')}
           </h1>
-          <p className="text-xl font-light text-gray-900 mb-8">
+          <p className="text-xl text-gray-900 mb-8">
             {t('landing.subheadline')}
           </p>
         </AnimateIn>
