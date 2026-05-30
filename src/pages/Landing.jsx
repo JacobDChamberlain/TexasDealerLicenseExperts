@@ -40,7 +40,7 @@ export default function Landing() {
         </AnimateIn>
 
         <AnimateIn direction="right" delay={200}>
-          <p className="text-xl font-extrabold text-gray-900 mb-10">{t('landing.tagline')}</p>
+          <p className="text-xl font-extrabold text-gray-900 mb-10 whitespace-pre-line">{t('landing.tagline')}</p>
         </AnimateIn>
 
         <AnimateIn direction="fade" delay={250}>
