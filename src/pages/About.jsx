@@ -6,7 +6,7 @@ export default function About() {
 
   return (
     <div className="border-8 border-accent mx-4 my-6 rounded-sm">
-      <div className="p-6 sm:p-10 max-w-2xl mx-auto">
+      <div className="p-6 sm:p-10 max-w-6xl mx-auto">
         <AnimateIn direction="fade">
           <h1 className="text-3xl sm:text-4xl font-black text-gray-900 text-center mb-2">
             {t('about.title')}

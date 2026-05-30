@@ -15,7 +15,7 @@ export default function SuccessStories() {
           <div className="w-24 h-1 bg-gray-900 mx-auto mb-10" />
         </AnimateIn>
 
-        <div className="max-w-2xl mx-auto space-y-8">
+        <div className="max-w-6xl mx-auto space-y-8">
           {stories.map(({ name, booked, obtained, licenseType, quote }, i) => (
             <AnimateIn key={name} direction={i % 2 === 0 ? 'left' : 'right'} delay={i * 100}>
               <div className="border border-gray-200 rounded-xl p-6 shadow-sm">

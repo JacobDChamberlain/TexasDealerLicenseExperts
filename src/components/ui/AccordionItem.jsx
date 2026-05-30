@@ -5,7 +5,7 @@ export default function AccordionItem({ question, answer }) {
   return (
     <div className="border-b border-gray-200 last:border-b-0">
       <button
-        className="flex w-full items-center justify-between py-4 text-left text-gray-800 font-medium hover:text-blue-700 transition-colors"
+        className="flex w-full items-center justify-between py-4 text-left text-gray-800 font-bold hover:text-blue-700 transition-colors"
         onClick={() => setOpen(!open)}
         aria-expanded={open}
       >

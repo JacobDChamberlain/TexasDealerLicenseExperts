@@ -10,7 +10,7 @@ export default function CTA() {
 
   return (
     <div className="mx-4 my-6">
-      <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
         {/* Consultation card */}
         <button
           onClick={() => choose('consult')}

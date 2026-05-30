@@ -7,7 +7,7 @@ export default function Landing() {
 
   return (
     <div className="border-8 border-accent mx-4 my-6 rounded-sm">
-      <div className="p-6 sm:p-10 max-w-2xl mx-auto text-center">
+      <div className="p-6 sm:p-10 max-w-6xl mx-auto text-center">
 
         <AnimateIn direction="fade" delay={100}>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-2">
@@ -29,14 +29,14 @@ export default function Landing() {
         </AnimateIn>
 
         <AnimateIn direction="left" delay={175}>
-          <ul className="inline-block text-left space-y-2 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2 text-left mb-8 inline-grid">
             {checklist.map((item) => (
-              <li key={item} className="flex items-start gap-2 text-gray-800 font-light">
+              <div key={item} className="flex items-start gap-2 text-gray-800 font-light">
                 <span className="text-accent font-bold mt-0.5">✔</span>
                 <span>{item}</span>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </AnimateIn>
 
         <AnimateIn direction="right" delay={200}>

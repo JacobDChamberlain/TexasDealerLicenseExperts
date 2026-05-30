@@ -17,7 +17,7 @@ export default function FAQ() {
         </h1>
         <div className="w-24 h-1 bg-gray-900 mx-auto mb-10" />
 
-        <div className="max-w-2xl mx-auto divide-y divide-gray-200">
+        <div className="max-w-6xl mx-auto divide-y divide-gray-200">
           {items.map(({ question, answer }) => (
             <AccordionItem key={question} question={question} answer={answer} />
           ))}
