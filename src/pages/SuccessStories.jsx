@@ -24,8 +24,10 @@ export default function SuccessStories() {
                 <p className="text-sm text-green-700 font-semibold mb-4">
                   ✅ {t('successStories.obtained')} {licenseType} — {obtained}
                 </p>
-                <blockquote className="text-gray-700 leading-relaxed border-l-4 border-accent pl-4 italic text-base">
-                  "{quote}"
+                <blockquote className="text-gray-700 leading-relaxed border-l-4 border-accent pl-4 italic text-base space-y-3">
+                  {quote.split('\n\n').map((para, i) => (
+                    <p key={i}>{i === 0 ? `"${para}` : para}{i === quote.split('\n\n').length - 1 ? '"' : ''}</p>
+                  ))}
                 </blockquote>
               </div>
             </AnimateIn>

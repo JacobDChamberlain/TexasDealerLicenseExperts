@@ -1,6 +1,34 @@
 import { useTranslation } from 'react-i18next';
 import AnimateIn from '../components/ui/AnimateIn';
 
+const GOOGLE_COLORS = ['#4285F4', '#EA4335', '#FBBC05', '#4285F4', '#34A853', '#EA4335', '#FBBC05', '#4285F4' ];
+
+function ColorfulHeadline({ text }) {
+  const ingIdx = text.indexOf('Googling');
+  if (ingIdx !== -1) {
+    return (
+      <>
+        {text.slice(0, ingIdx)}
+        {'Googling'.split('').map((letter, i) => (
+          <span key={i} style={{ color: GOOGLE_COLORS[i] }}>{letter}</span>
+        ))}
+        {text.slice(ingIdx + 8)}
+      </>
+    );
+  }
+  const idx = text.indexOf('Google');
+  if (idx === -1) return <>{text}</>;
+  return (
+    <>
+      {text.slice(0, idx)}
+      {'Google'.split('').map((letter, i) => (
+        <span key={i} style={{ color: GOOGLE_COLORS[i] }}>{letter}</span>
+      ))}
+      {text.slice(idx + 6)}
+    </>
+  );
+}
+
 export default function Landing() {
   const { t } = useTranslation();
   const checklist = t('landing.checklist', { returnObjects: true });
@@ -11,7 +39,7 @@ export default function Landing() {
 
         <AnimateIn direction="fade" delay={100}>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight mb-2">
-            {t('landing.headline')}
+            <ColorfulHeadline text={t('landing.headline')} />
           </h1>
           <p className="text-xl text-gray-900 mb-8">
             {t('landing.subheadline')}
