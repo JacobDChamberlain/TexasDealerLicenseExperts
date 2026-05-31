@@ -43,7 +43,7 @@ export const handler = async (event) => {
         from: process.env.FROM_EMAIL,
         to: email,
         subject: 'Your TX Dealer License Experts Consultation is Confirmed!',
-        text: `Hi ${name},\n\nThank you for booking your in-person consultation (${amountFormatted}). We'll be in touch shortly to confirm the details.\n\nTX Dealer License Experts`,
+        text: `Hi ${name},\n\nThank you for booking your in-person consultation (${amountFormatted}). We'll be in touch shortly to confirm the details.\n\nDealer License Pros LLC`,
       }),
     ]);
   } catch (err) {

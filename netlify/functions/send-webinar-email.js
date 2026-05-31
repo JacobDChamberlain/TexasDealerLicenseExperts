@@ -13,7 +13,7 @@ export const handler = async (event) => {
     return { statusCode: 400, body: 'Invalid JSON' };
   }
 
-  const { name, email, phone, dealerType, currentStep, areas, dmvConcern } = data;
+  const { name, email, phone, dealerType, currentStep, areas, dmvConcern, additionalDetails } = data;
 
   const dealerSection = dealerType === 'new'
     ? `Dealer Type: New Prospective Dealer\nCurrent Step: ${currentStep}\nAreas: ${areas}`
@@ -26,14 +26,14 @@ export const handler = async (event) => {
         from: process.env.FROM_EMAIL,
         to: process.env.OWNER_EMAIL,
         subject: `[WEBINAR SIGNUP] ${name} — ${email}`,
-        text: `New webinar signup:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\n${dealerSection}`,
+        text: `New webinar signup:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\n${dealerSection}${additionalDetails ? `\nAdditional Details: ${additionalDetails}` : ''}`,
       }),
       // Confirmation to customer
       resend.emails.send({
         from: process.env.FROM_EMAIL,
         to: email,
         subject: 'You\'re registered for the TX Dealer License Experts Webinar!',
-        text: `Hi ${name},\n\nYou're registered for our free live webinar. We'll send details closer to the date.\n\nThank you!\nTX Dealer License Experts`,
+        text: `Hi ${name},\n\nYou're registered for our free live webinar. We'll send details closer to the date.\n\nThank you!\nDealer License Pros LLC`,
       }),
     ]);
 
