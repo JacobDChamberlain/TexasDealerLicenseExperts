@@ -6,7 +6,7 @@ export default function CTA() {
   const { t } = useTranslation();
   const navigate = useNavigate();
 
-  const choose = (path) => navigate('/contact', { state: { path } });
+  const choose = (path) => navigate(`/contact?path=${path}`);
 
   return (
     <div className="mx-4 my-6">

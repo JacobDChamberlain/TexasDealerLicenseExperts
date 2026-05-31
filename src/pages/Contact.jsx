@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const WEBINAR_EMAIL_URL = '/.netlify/functions/send-webinar-email';
 
 export default function Contact() {
   const { t } = useTranslation();
-  const { state } = useLocation();
+  const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const path = state?.path ?? 'consult';
+  const path = searchParams.get('path') ?? 'consult';
 
   const [form, setForm] = useState({
     name: '', email: '', phone: '', dealerType: '', currentStep: '', areas: '', dmvConcern: '', additionalDetails: '',
