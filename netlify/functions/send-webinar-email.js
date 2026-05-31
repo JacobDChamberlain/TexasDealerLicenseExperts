@@ -32,7 +32,7 @@ export const handler = async (event) => {
       resend.emails.send({
         from: process.env.FROM_EMAIL,
         to: email,
-        subject: 'You\'re registered for the TX Dealer License Experts Webinar!',
+        subject: 'You\'re registered for the Dealer License Pros Webinar!',
         text: `Hi ${name},\n\nYou're registered for our free live webinar. We'll send details closer to the date.\n\nThank you!\nDealer License Pros LLC`,
       }),
     ]);
