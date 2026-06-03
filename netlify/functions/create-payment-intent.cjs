@@ -1,6 +1,6 @@
 const Stripe = require('stripe');
 
-const CONSULTATION_PRICE_CENTS = 50; // $0.50 — TESTING, change back to 27500 before go-live
+const CONSULTATION_PRICE_CENTS = 27500; // $275.00
 
 exports.handler = async (event) => {
   if (event.httpMethod !== 'POST') {
