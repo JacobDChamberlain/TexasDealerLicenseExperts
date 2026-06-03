@@ -1,4 +1,4 @@
-const CONSULTATION_PRICE_CENTS = 27500; // $275.00
+const CONSULTATION_PRICE_CENTS = 50; // $0.50 — TESTING, change back to 27500 before go-live
 
 export const handler = async (event) => {
   if (event.httpMethod !== 'POST') {
