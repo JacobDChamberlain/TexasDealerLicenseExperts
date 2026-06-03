@@ -1,9 +1,10 @@
-export const handler = async (event) => {
+const { Resend } = require('resend');
+
+exports.handler = async (event) => {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
 
-  const { Resend } = await import('resend');
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   let data;
@@ -21,18 +22,16 @@ export const handler = async (event) => {
 
   try {
     await Promise.all([
-      // Email to owner
       resend.emails.send({
         from: process.env.FROM_EMAIL,
         to: process.env.OWNER_EMAIL,
         subject: `[WEBINAR SIGNUP] ${name} — ${email}`,
         text: `New webinar signup:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\n${dealerSection}${additionalDetails ? `\nAdditional Details: ${additionalDetails}` : ''}`,
       }),
-      // Confirmation to customer
       resend.emails.send({
         from: process.env.FROM_EMAIL,
         to: email,
-        subject: 'You\'re registered for the Dealer License Pros Webinar!',
+        subject: "You're registered for the Dealer License Pros Webinar!",
         text: `Hi ${name},\n\nYou're registered for our free live webinar. We'll send details closer to the date.\n\nThank you!\nDealer License Pros LLC`,
       }),
     ]);

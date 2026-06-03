@@ -1,11 +1,12 @@
+const Stripe = require('stripe');
+
 const CONSULTATION_PRICE_CENTS = 50; // $0.50 — TESTING, change back to 27500 before go-live
 
-export const handler = async (event) => {
+exports.handler = async (event) => {
   if (event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method Not Allowed' };
   }
 
-  const Stripe = (await import('stripe')).default;
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
   let contact;

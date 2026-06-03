@@ -1,7 +1,8 @@
-export const handler = async (event) => {
-  const Stripe = (await import('stripe')).default;
+const Stripe = require('stripe');
+const { Resend } = require('resend');
+
+exports.handler = async (event) => {
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-  const { Resend } = await import('resend');
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   const sig = event.headers['stripe-signature'];
@@ -42,7 +43,7 @@ export const handler = async (event) => {
       resend.emails.send({
         from: process.env.FROM_EMAIL,
         to: email,
-        subject: 'Your TX Dealer License Experts Consultation is Confirmed!',
+        subject: 'Your Dealer License Pros Consultation is Confirmed!',
         text: `Hi ${name},\n\nThank you for booking your in-person consultation (${amountFormatted}). We'll be in touch shortly to confirm the details.\n\nDealer License Pros LLC`,
       }),
     ]);
