@@ -23,7 +23,7 @@ export const handler = async (event) => {
   }
 
   const { metadata, amount } = stripeEvent.data.object;
-  const { name, email, phone, dealerType, currentStep, areas, dmvConcern } = metadata;
+  const { name, email, phone, dealerType, currentStep, areas, dmvConcern, additionalDetails } = metadata;
 
   const dealerSection = dealerType === 'new'
     ? `Dealer Type: New Prospective Dealer\nCurrent Step: ${currentStep}\nAreas: ${areas}`
@@ -37,7 +37,7 @@ export const handler = async (event) => {
         from: process.env.FROM_EMAIL,
         to: process.env.OWNER_EMAIL,
         subject: `[PAID CONSULTATION] ${name} — ${email}`,
-        text: `New paid consultation booking:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nAmount: ${amountFormatted}\n${dealerSection}`,
+        text: `New paid consultation booking:\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nAmount: ${amountFormatted}\n${dealerSection}${additionalDetails ? `\nAdditional Details: ${additionalDetails}` : ''}`,
       }),
       resend.emails.send({
         from: process.env.FROM_EMAIL,

@@ -27,6 +27,7 @@ export const handler = async (event) => {
         currentStep: contact.currentStep ?? '',
         areas: contact.areas ?? '',
         dmvConcern: contact.dmvConcern ?? '',
+        additionalDetails: contact.additionalDetails ?? '',
       },
     });
 
