@@ -10,13 +10,12 @@ import FAQ from './pages/FAQ';
 import SuccessStories from './pages/SuccessStories';
 import CTA from './pages/CTA';
 import Contact from './pages/Contact';
-import Book from './pages/Book';
 import ThankYou from './pages/ThankYou';
 import SplashScreen from './components/ui/SplashScreen';
 
 function AppShell() {
   const { pathname } = useLocation();
-  const hideBookNow = ['/contact', '/book'].includes(pathname);
+  const hideBookNow = ['/contact'].includes(pathname);
   const [docked, setDocked] = useState(false);
   const anchorRef = useRef(null);
   const inFlowButtonRef = useRef(null);
@@ -48,7 +47,6 @@ function AppShell() {
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/get-started" element={<CTA />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/book" element={<Book />} />
           <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
       </main>

@@ -1,10 +1,8 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 export default function ThankYou() {
   const { t } = useTranslation();
-  const { state } = useLocation();
-  const path = state?.path ?? 'consult';
 
   return (
     <div className="mx-4 my-6">
@@ -21,9 +19,8 @@ export default function ThankYou() {
         >
           Thank you!
         </h1>
-        <p className="text-gray-700 text-lg">
-          {path === 'webinar' ? t('thankYou.webinarMsg') : t('thankYou.consultMsg')}
-        </p>
+        <p className="text-gray-700 text-lg">{t('thankYou.consultMsg')}</p>
+        <p className="text-gray-500 text-sm mt-4">{t('thankYou.emailNote')}</p>
         <Link to="/" className="inline-block mt-8 text-gray-900 underline font-semibold hover:underline">
           ← {t('thankYou.returnHome')}
         </Link>

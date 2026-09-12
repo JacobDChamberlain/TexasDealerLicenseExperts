@@ -94,36 +94,33 @@
     ]
   },
   "cta": {
-    "webinarTitle": "Free Live Webinar",
-    "webinarDesc": "with small Q&A Section at end (15 mins)",
-    "webinarNext": "Next Available:",
-    "consultTitle": "In-Person 2 hour consultation",
-    "consultUsual": "Usually $350,",
-    "consultNow": "Now only $275 until August 31st"
+    "consultTitle": "In-Person 2-Hour Consultation",
+    "consultFree": "100% Free",
+    "consultDesc": "Sit down one-on-one with a local dealer licensing pro. No cost, no obligation."
   },
   "contact": {
-    "name": "Name",
+    "title": "Request Your Free Consultation",
+    "intro": "Tell us about your situation and we'll reach out to schedule your free in-person 2-hour consultation.",
+    "required": "All fields are required.",
+    "name": "Full Name",
     "email": "Email",
     "phone": "Phone #",
     "dealerQuestion": "Are you a new prospective dealer or already a used car dealer in Texas?",
     "newDealer": "New prospective dealer",
     "establishedDealer": "Already a used car dealer in Texas",
     "currentStep": "Current Step in Process?",
-    "areas": "What areas are you trying to be a dealer in?",
+    "cities": "What cities are you trying to be a dealer in?",
+    "partners": "Are you a one partner LLC, or do you have more than one person registered?",
+    "priorDealer": "Have you ever been a dealer before? Or any failed application attempts?",
     "dmvConcern": "What is your main concern with the DMV?",
     "additionalDetails": "Please add any details you want our team to know",
     "submit": "Submit",
     "submitting": "Submitting..."
   },
-  "book": {
-    "title": "Complete Your Booking",
-    "subtitle": "In-Person 2-Hour Consultation — $275",
-    "processing": "Processing..."
-  },
   "thankYou": {
     "title": "Thank You!",
-    "consultMsg": "Your consultation is booked! We'll be in touch shortly to confirm details.",
-    "webinarMsg": "You're registered for the webinar! Check your email for confirmation details.",
+    "consultMsg": "We've received your request! Our team will review your answers and reach out shortly to schedule your free in-person consultation.",
+    "emailNote": "A confirmation email is on its way to your inbox.",
     "returnHome": "Return Home"
   },
   "common": {

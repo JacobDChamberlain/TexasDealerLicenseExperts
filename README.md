@@ -1,6 +1,6 @@
 # Dealer License Pros — Site Overview
 
-Marketing and booking website for **Dealer License Pros LLC**, a Texas dealer licensing consulting business. The site guides visitors from awareness to either a free webinar signup or a paid in-person consultation booking.
+Marketing and lead-capture website for **Dealer License Pros LLC**, a Texas dealer licensing consulting business. The site guides visitors from awareness to a request for a **free in-person 2-hour consultation**, capturing their details and emailing them to the owner.
 
 **Live URL:** https://dealerlicensepros.com
 
@@ -14,7 +14,7 @@ Marketing and booking website for **Dealer License Pros LLC**, a Texas dealer li
 | Styling | Tailwind CSS (accent: `#F8B21D`, dark: `#111827`) |
 | Routing | React Router v7 |
 | Internationalization | react-i18next (English + Spanish) |
-| Payments | Stripe (Payment Element + Webhooks) |
+| Payments | _None — consultations are free._ |
 | Transactional Email | Resend |
 | Hosting | Netlify (free tier) |
 | Serverless Functions | Netlify Functions (CommonJS `.cjs`) |
@@ -42,12 +42,13 @@ Marketing and booking website for **Dealer License Pros LLC**, a Texas dealer li
 
 | Variable | Used In |
 |---|---|
-| `VITE_STRIPE_PUBLISHABLE_KEY` | Frontend (`Book.jsx`) |
-| `STRIPE_SECRET_KEY` | `create-payment-intent.cjs`, `stripe-webhook.cjs` |
-| `STRIPE_WEBHOOK_SECRET` | `stripe-webhook.cjs` |
-| `RESEND_API_KEY` | `send-webinar-email.cjs`, `stripe-webhook.cjs` |
-| `FROM_EMAIL` | Both email functions (set to `Mail@DealerLicensePros.com`) |
-| `OWNER_EMAIL` | Both email functions (set to `Mail@DealerLicensePros.com`) |
+| `RESEND_API_KEY` | `send-consult-request.cjs` |
+| `FROM_EMAIL` | `send-consult-request.cjs` (set to `Mail@DealerLicensePros.com`) |
+| `OWNER_EMAIL` | `send-consult-request.cjs` (set to `Mail@DealerLicensePros.com`) |
+
+The old Stripe variables (`VITE_STRIPE_PUBLISHABLE_KEY`, `STRIPE_SECRET_KEY`,
+`STRIPE_WEBHOOK_SECRET`) are no longer used and can be deleted from the Netlify
+dashboard.
 
 ---
 
@@ -59,43 +60,45 @@ Marketing and booking website for **Dealer License Pros LLC**, a Texas dealer li
 | `/about` | About |
 | `/faq` | FAQ |
 | `/success-stories` | Success Stories |
-| `/get-started` | CTA — two-path card (webinar vs. consultation) |
-| `/contact` | Contact Form (shared by both paths, `?path=webinar` or `?path=consult`) |
-| `/book` | Book & Pay (consultation path only — Stripe Payment Element) |
-| `/thank-you` | Thank You (messaging varies by path) |
+| `/get-started` | CTA — single card: free in-person consultation |
+| `/contact` | Consultation request form (branches on dealer type) |
+| `/thank-you` | Thank You / confirmation |
 
 ---
 
-## User Flows
+## User Flow
 
-### Webinar Path
+1. `/get-started` — user clicks the single **In-Person 2-Hour Consultation (100% Free)** card
+2. `/contact` — fills out the form. **Every visible field is mandatory.**
 
-1. `/get-started` — user selects **Free Webinar**
-2. `/contact?path=webinar` — fills out contact form (name, email, phone, dealer type, details)
-3. Submits form → `POST /.netlify/functions/send-webinar-email`
-4. Function sends two emails simultaneously:
-   - **Owner:** `[WEBINAR SIGNUP] Name — email` with all form data → `Mail@DealerLicensePros.com`
-   - **Customer:** Webinar registration confirmation → customer's email
-5. User navigated to `/thank-you` (webinar message)
+   Always asked:
+   1. Full Name
+   2. Email
+   3. Phone #
+   4. Are you a new prospective dealer, or already a used car dealer in Texas?
 
----
+   If **new prospective dealer**:
+   5. Current Step in Process?
+   6. What cities are you trying to be a dealer in?
+   7. One partner LLC, or more than one person registered?
+   8. Ever been a dealer before? Any failed application attempts?
 
-### Consultation Path
+   If **already a used car dealer**:
+   5. What is your main concern with the DMV?
 
-1. `/get-started` — user selects **In-Person Consultation**
-2. `/contact?path=consult` — fills out contact form (name, email, phone, dealer type, conditional fields, additional details)
-3. Submits form → Terms & Conditions modal appears
-4. User clicks **I Agree** → navigated to `/book` (contact info passed via React Router state)
-5. `/book` loads → `POST /.netlify/functions/create-payment-intent` called with contact info
-6. Stripe creates a PaymentIntent for **$275.00**, returns `clientSecret`
-7. Stripe Payment Element renders using `clientSecret`
-8. Customer enters payment info and submits
-9. `stripe.confirmPayment()` processes the charge
-10. On success → Stripe fires `payment_intent.succeeded` webhook to `https://dealerlicensepros.com/.netlify/functions/stripe-webhook`
-11. Webhook function sends two emails simultaneously:
-    - **Owner:** `[PAID CONSULTATION] Name — email` with all form data + amount → `Mail@DealerLicensePros.com`
-    - **Customer:** Consultation confirmation with amount paid → customer's email
-12. User navigated to `/thank-you` (consultation message)
+   Then, always asked:
+   - Please add any details you want our team to know
+
+3. Submit → `POST /.netlify/functions/send-consult-request`
+4. Function re-validates the branch server-side, then sends two emails simultaneously:
+   - **Owner:** `[CONSULT REQUEST] NEW|EXISTING — Name — email` with every answer,
+     `replyTo` set to the visitor's address → `Mail@DealerLicensePros.com`
+   - **Visitor:** Request-received confirmation → visitor's email
+5. User navigated to `/thank-you`
+
+Only the chosen branch's fields are submitted, so the owner email never shows
+empty rows for the branch that wasn't taken. Answers are HTML-escaped before
+being embedded in the email bodies.
 
 ---
 
@@ -103,16 +106,35 @@ Marketing and booking website for **Dealer License Pros LLC**, a Texas dealer li
 
 | File | Trigger | Purpose |
 |---|---|---|
-| `netlify/functions/send-webinar-email.cjs` | Form submit (webinar path) | Sends webinar signup emails to owner + customer |
-| `netlify/functions/create-payment-intent.cjs` | Page load on `/book` | Creates Stripe PaymentIntent for $275, returns `clientSecret` |
-| `netlify/functions/stripe-webhook.cjs` | Stripe `payment_intent.succeeded` webhook | Sends paid consultation emails to owner + customer |
+| `netlify/functions/send-consult-request.cjs` | Form submit on `/contact` | Sends consultation-request emails to owner + visitor |
 
-Stripe webhook endpoint registered at:
-`https://dealerlicensepros.com/.netlify/functions/stripe-webhook`
-Listens for: `payment_intent.succeeded`
+Only files inside `netlify/functions/` are deployed (set in `netlify.toml`).
 
 ---
 
-## Still Pending (awaiting client)
+## History
 
-- Webinar confirmation email wording update (`netlify/functions/send-webinar-email.cjs` — customer confirmation email)
+Until September 2026 the site ran a two-path model: a free webinar signup and a
+paid ($275) in-person consultation booked through Stripe. The client moved to a
+single **free** consultation, turning the site into pure lead capture. The
+webinar pages, the Stripe integration (`Book.jsx`, `create-payment-intent.cjs`,
+`stripe-webhook.cjs`), and the `@stripe/*` dependencies were removed outright —
+recoverable from git history if ever needed.
+
+---
+
+## Local Development
+
+```bash
+npx netlify-cli dev     # required — plain `npm run dev` will not serve /.netlify/functions/*
+```
+
+Needs `RESEND_API_KEY`, `FROM_EMAIL`, and `OWNER_EMAIL` in a local `.env`.
+
+---
+
+## Known Gaps
+
+- Spanish copy deliberately keeps the English word **"dealer"** rather than
+  translating it to "concesionario"/"concesionaria" — this is a client requirement.
+- `gdn.steps` in both locale files are still `[ Placeholder ]` pending client copy.

@@ -9,13 +9,13 @@
   },
   "about": {
     "title": "Nosotros",
-    "p1": "Hola, soy Ricky, fundador de Dealer License Pros y su profesional local de licencias.\n\nDurante más de 10 años, he ayudado a aspirantes a dueños de concesionarias a navegar el proceso de licencias con confianza. Comencé este negocio porque vi a demasiadas personas perdiendo tiempo, dinero y quedándose atascadas intentando resolverlo todo por su cuenta.",
+    "p1": "Hola, soy Ricky, fundador de Dealer License Pros y su profesional local de licencias.\n\nDurante más de 10 años, he ayudado a aspirantes a dueños de dealers a navegar el proceso de licencias con confianza. Comencé este negocio porque vi a demasiadas personas perdiendo tiempo, dinero y quedándose atascadas intentando resolverlo todo por su cuenta.",
     "p2": "La mayoría comienza buscando en Google, viendo videos al azar o siguiendo consejos desactualizados. El problema es que las licencias de dealer no son algo que quiera adivinar. Un pequeño error puede retrasar su aprobación, crear problemas de cumplimiento o costarle miles en tiempo perdido.\n\nAhí es donde entro yo.\n\nTrabajo directamente con los clientes para guiarlos paso a paso a través del proceso de licencia de dealer, desde el papeleo y la configuración del negocio hasta las inspecciones, correcciones y requisitos estatales. Ya sea que solicite una licencia de dealer estándar, licencia mayorista, licencia de motocicletas u otra licencia especial, simplifico el proceso para que pueda iniciar más rápido y evitar contratiempos costosos.\n\nA lo largo de los años, he ayudado a cientos de clientes a obtener su aprobación con éxito. Sé lo que buscan las agencias de licencias, cómo evitar deficiencias comunes y cómo mantener el proceso avanzando de manera eficiente.\n\nY si ya tiene una licencia pero tiene problemas, renovaciones, problemas de cumplimiento o deficiencias, también puedo ayudar con eso.",
-    "p3": "Lo que hace diferente mi enfoque es simple:\n\nOrientación real uno a uno. Respuestas claras sin confusión. Soporte rápido y eficiente. Experiencia que le ahorra tiempo y dinero. Compromiso de ayudarle a obtener la aprobación correctamente.\n\nCreo que comenzar un dealer debería sentirse emocionante, no abrumador. Mi objetivo es darle el apoyo, la claridad y la experiencia que necesita para avanzar con confianza.\n\nSin suposiciones. Sin demoras innecesarias. Solo resultados.\n\nSi está listo para comenzar su concesionaria de la manera correcta, hablemos."
+    "p3": "Lo que hace diferente mi enfoque es simple:\n\nOrientación real uno a uno. Respuestas claras sin confusión. Soporte rápido y eficiente. Experiencia que le ahorra tiempo y dinero. Compromiso de ayudarle a obtener la aprobación correctamente.\n\nCreo que comenzar un dealer debería sentirse emocionante, no abrumador. Mi objetivo es darle el apoyo, la claridad y la experiencia que necesita para avanzar con confianza.\n\nSin suposiciones. Sin demoras innecesarias. Solo resultados.\n\nSi está listo para comenzar su dealer de la manera correcta, hablemos."
   },
   "gdn": {
     "title": "¿Qué es una Licencia GDN?",
-    "intro": "Una licencia GDN (Número Distintivo General) es la licencia emitida por el Departamento de Vehículos Motorizados de Texas que le permite comprar y vender vehículos usados legalmente como dealer en Texas. Sin ella, no puede operar legalmente un concesionario. [ Texto introductorio adicional a proporcionar por el cliente ]",
+    "intro": "Una licencia GDN (Número Distintivo General) es la licencia emitida por el Departamento de Vehículos Motorizados de Texas que le permite comprar y vender vehículos usados legalmente como dealer en Texas. Sin ella, no puede operar legalmente un dealer. [ Texto introductorio adicional a proporcionar por el cliente ]",
     "stepsTitle": "Pasos Generales para Obtener la Licencia",
     "steps": [
       { "heading": "Paso 1 — [ Marcador de posición ]", "body": "[ El cliente debe proporcionar los detalles ]" },
@@ -51,7 +51,7 @@
     "q1": "¿Cuánto tiempo tarda obtener una licencia de dealer?",
     "a1": "El tiempo depende de los requisitos de su estado y qué tan rápido se completan los documentos, pero la mayoría de los clientes que siguen nuestro proceso pueden avanzar mucho más rápido y con menos retrasos.",
     "q2": "¿Necesito experiencia para convertirme en dealer licenciado?",
-    "a2": "No. Muchos de nuestros clientes son dueños de concesionarias por primera vez. Los guiamos paso a paso, incluso si están comenzando desde cero.",
+    "a2": "No. Muchos de nuestros clientes son dueños de dealers por primera vez. Los guiamos paso a paso, incluso si están comenzando desde cero.",
     "q3": "¿Pueden ayudar si mi solicitud fue denegada?",
     "a3": "Sí. Si su solicitud fue denegada, retrasada o devuelta con deficiencias, podemos revisar los problemas y ayudarle a corregirlos correctamente.",
     "q4": "¿Ayudan con renovaciones de licencias?",
@@ -94,36 +94,33 @@
     ]
   },
   "cta": {
-    "webinarTitle": "Seminario Web en Vivo Gratuito",
-    "webinarDesc": "con sección de preguntas y respuestas al final (15 min)",
-    "webinarNext": "Próxima disponible:",
-    "consultTitle": "Consulta en persona de 2 horas",
-    "consultUsual": "Generalmente $350,",
-    "consultNow": "Ahora solo $275 hasta el 31 de agosto"
+    "consultTitle": "Consulta en Persona de 2 Horas",
+    "consultFree": "100% Gratis",
+    "consultDesc": "Siéntese uno a uno con un profesional local de licencias de dealer. Sin costo, sin compromiso."
   },
   "contact": {
-    "name": "Nombre",
+    "title": "Solicite su Consulta Gratuita",
+    "intro": "Cuéntenos sobre su situación y nos comunicaremos con usted para agendar su consulta gratuita en persona de 2 horas.",
+    "required": "Todos los campos son obligatorios.",
+    "name": "Nombre Completo",
     "email": "Correo electrónico",
     "phone": "Teléfono",
     "dealerQuestion": "¿Es usted un nuevo dealer potencial o ya es dealer de autos usados en Texas?",
     "newDealer": "Nuevo dealer potencial",
     "establishedDealer": "Ya soy dealer de autos usados en Texas",
     "currentStep": "¿Paso actual en el proceso?",
-    "areas": "¿En qué áreas quiere ser dealer?",
+    "cities": "¿En qué ciudades quiere ser dealer?",
+    "partners": "¿Es un LLC de un solo socio, o tiene más de una persona registrada?",
+    "priorDealer": "¿Ha sido dealer anteriormente? ¿O ha tenido solicitudes rechazadas?",
     "dmvConcern": "¿Cuál es su principal preocupación con el DMV?",
     "additionalDetails": "Por favor agregue cualquier detalle que quiera que nuestro equipo sepa",
     "submit": "Enviar",
     "submitting": "Enviando..."
   },
-  "book": {
-    "title": "Complete su Reserva",
-    "subtitle": "Consulta en Persona de 2 Horas — $275",
-    "processing": "Procesando..."
-  },
   "thankYou": {
     "title": "¡Gracias!",
-    "consultMsg": "¡Su consulta está reservada! Nos comunicaremos pronto para confirmar los detalles.",
-    "webinarMsg": "¡Está registrado para el seminario web! Revise su correo electrónico para los detalles.",
+    "consultMsg": "¡Hemos recibido su solicitud! Nuestro equipo revisará sus respuestas y se comunicará con usted pronto para agendar su consulta gratuita en persona.",
+    "emailNote": "Un correo de confirmación va en camino a su bandeja de entrada.",
     "returnHome": "Volver al Inicio"
   },
   "common": {
