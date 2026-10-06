@@ -4,6 +4,7 @@ import Navbar from './components/layout/Navbar';
 import SecondaryNav from './components/layout/SecondaryNav';
 import FloatingBookNow from './components/layout/FloatingBookNow';
 import Footer from './components/layout/Footer';
+import PageMeta from './components/layout/PageMeta';
 import Landing from './pages/Landing';
 import About from './pages/About';
 import FAQ from './pages/FAQ';
@@ -36,6 +37,7 @@ function AppShell() {
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <PageMeta />
       <Navbar />
       <SecondaryNav />
       {/* pt-24 = 56px banner + 40px secondary nav */}

@@ -126,5 +126,35 @@
   "common": {
     "bookNow": "Habla con un Experto",
     "loading": "Cargando..."
+  },
+  "meta": {
+    "home": {
+      "title": "Dealer License Pros | Obtenga su Licencia de Dealer en Texas",
+      "description": "Obtenga su licencia de dealer (GDN) en Texas de la manera correcta. Consulta gratuita uno a uno con un profesional local: más de 10 años de experiencia y cientos de aprobaciones."
+    },
+    "about": {
+      "title": "Nosotros | Dealer License Pros",
+      "description": "Conozca a Ricky, fundador de Dealer License Pros. Por más de 10 años ha ayudado a dueños de dealers en Texas a obtener su licencia más rápido y evitar errores costosos."
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes | Dealer License Pros",
+      "description": "Respuestas a preguntas comunes sobre cómo obtener una licencia de dealer en Texas: tiempos, requisitos, experiencia y cómo funciona nuestra consulta."
+    },
+    "successStories": {
+      "title": "Casos de Éxito | Dealer License Pros",
+      "description": "Dealers reales en Texas que obtuvieron su licencia con la ayuda de Dealer License Pros. Vea qué tan rápido nuestros clientes pasaron de la consulta a la aprobación."
+    },
+    "getStarted": {
+      "title": "Comience | Dealer License Pros",
+      "description": "Reserve una consulta gratuita en persona de 2 horas con un profesional local de licencias de dealer. Sin costo, sin compromiso."
+    },
+    "contact": {
+      "title": "Solicite su Consulta Gratuita | Dealer License Pros",
+      "description": "Cuéntenos sobre su situación y nos comunicaremos con usted para agendar su consulta gratuita en persona de 2 horas sobre su licencia de dealer."
+    },
+    "thankYou": {
+      "title": "Gracias | Dealer License Pros",
+      "description": "Hemos recibido su solicitud de consulta."
+    }
   }
 }

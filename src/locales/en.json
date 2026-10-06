@@ -126,5 +126,35 @@
   "common": {
     "bookNow": "Talk to a PRO",
     "loading": "Loading..."
+  },
+  "meta": {
+    "home": {
+      "title": "Dealer License Pros | Get Your Texas Dealer License",
+      "description": "Get your Texas dealer license (GDN) the right way. Free one-on-one consultation with a local Dealer License Pro: 10+ years of experience and hundreds of approvals."
+    },
+    "about": {
+      "title": "About Us | Dealer License Pros",
+      "description": "Meet Ricky, founder of Dealer License Pros. For over 10 years he has helped Texas dealership owners get licensed faster and avoid costly mistakes."
+    },
+    "faq": {
+      "title": "FAQ | Dealer License Pros",
+      "description": "Answers to common questions about getting a Texas dealer license: timelines, requirements, experience, and how our consultation works."
+    },
+    "successStories": {
+      "title": "Success Stories | Dealer License Pros",
+      "description": "Real Texas dealers who got their license with help from Dealer License Pros. See how fast our clients went from consultation to approval."
+    },
+    "getStarted": {
+      "title": "Get Started | Dealer License Pros",
+      "description": "Book a free in-person 2-hour consultation with a local dealer licensing pro. No cost, no obligation."
+    },
+    "contact": {
+      "title": "Request a Free Consultation | Dealer License Pros",
+      "description": "Tell us about your situation and we will reach out to schedule your free in-person 2-hour dealer license consultation."
+    },
+    "thankYou": {
+      "title": "Thank You | Dealer License Pros",
+      "description": "Your consultation request has been received."
+    }
   }
 }
